@@ -1,0 +1,11 @@
+# see https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+BasedOnStyle: Microsoft  
+Language: Cpp
+Standard: Cpp11
+
+SpaceAfterCStyleCast: true
+
+AccessModifierOffset: -4
+IndentWidth: 4
+UseTab: Never

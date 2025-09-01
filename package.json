@@ -1,0 +1,29 @@
+{
+  "name": "terraria-world-reader-ts-wasm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./adapter": {
+      "node": {
+        "import": "./dist/platform/node.js",
+        "require": "./dist/platform/node.cjs"
+      },
+      "browser": "./dist/platform/browser.js",
+      "default": "./dist/platform/browser.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsdown": "^0.14.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "scripts": {
+    "build": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm,cjs --out-dir dist --dts --clean"
+  }
+}
