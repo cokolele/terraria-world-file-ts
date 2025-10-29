@@ -1,5 +1,5 @@
 {
-  "name": "terraria-world-reader-ts-wasm",
+  "name": "terraria-world-file-ts",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
