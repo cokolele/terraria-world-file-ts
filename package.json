@@ -5,13 +5,13 @@
   "license": "MIT",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
     "./adapter": {
       "node": {
-        "import": "./dist/platform/node.js",
-        "require": "./dist/platform/node.cjs"
+        "import": "./dist/platform/node.mjs",
+        "require": "./dist/platform/node.js"
       },
       "browser": "./dist/platform/browser.js",
       "default": "./dist/platform/browser.js"
@@ -24,6 +24,7 @@
     "vitest": "^3.2.4"
   },
   "scripts": {
-    "build": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm,cjs --out-dir dist --dts --clean"
+    "build": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm,cjs --out-dir dist --dts --clean",
+    "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm,cjs --out-dir dist --dts --clean --watch"
   }
 }
