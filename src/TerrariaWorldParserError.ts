@@ -1,6 +1,6 @@
 export default class TerrariaWorldParserError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = 'TerrariaWorldParserError';
+  constructor(message?: string) {
+    super(message)
+    this.name = 'TerrariaWorldParserError'
   }
 }

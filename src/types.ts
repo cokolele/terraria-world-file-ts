@@ -1,224 +1,28 @@
+import type sections from './parsers'
+import type BinaryReader from './BinaryReader'
+
 export type Options = {
-  ignorePointers?: boolean;
-  dataRecovery?: boolean;
-  sections?: Section.Name[];
-  ignoreBounds?: boolean;
-  progressCallback?: (percent: number) => void;
+  ignorePointers: boolean
+  dataRecovery: boolean
+  sections: Section.Name[]
+  ignoreBounds: boolean
+  progressCallback: (percent: number) => void
 }
 
 export type WorldProperties = {
-  version: number;
-  pointers: number[];
-  importants: boolean[];
-  height: number;
-  width: number;
+  version: number
+  pointers: number[]
+  importants: boolean[]
+  height: number
+  width: number
 }
 
 export namespace Section {
-  export type Name =
-    'fileFormatHeader'
-    | 'header'
-    | 'tiles'
-    | 'chests'
-    | 'signs'
-    | 'NPCs'
-    | 'tileEntities'
-    | 'weightedPressurePlates'
-    | 'rooms'
-    | 'bestiary'
-    | 'creativePowers'
-    | 'footer';
+  export type Name = keyof typeof sections
 
-  export type FileFormatHeader = {
-    version: number;
-    magicNumber: string;
-    fileType: number;
-    revision: number;
-    favorite: boolean;
-    pointers: number[];
-    importants: boolean[];
+  export type Map = {
+    [K in Name]: ReturnType<(typeof sections)[K]>
   }
 
-  export type Header = {
-    version: number;
-    magicNumber: string;
-    fileType: number;
-    revision: number;
-    favorite: boolean;
-    pointers: number[];
-    importants: boolean[];
-    mapName: string;
-    seedText: string;
-    worldGeneratorVersion: Uint8Array;
-    guid: Uint8Array;
-    guidString: string;
-    worldId: number;
-    leftWorld: number;
-    rightWorld: number;
-    topWorld: number;
-    bottomWorld: number;
-    maxTilesY: number;
-    maxTilesX: number;
-    gameMode?: number;
-    drunkWorld?: boolean;
-    getGoodWorld?: boolean;
-    getTenthAnniversaryWorld?: boolean;
-    dontStarveWorld?: boolean;
-    notTheBeesWorld?: boolean;
-    remixWorld?: boolean;
-    noTrapsWorld?: boolean;
-    zenithWorld?: boolean;
-    expertMode?: boolean;
-    creationTime: Uint8Array;
-    moonType: number;
-    treeX: [number, number, number];
-    treeStyle: [number, number, number, number];
-    caveBackX: [number, number, number];
-    caveBackStyle: [number, number, number, number];
-    iceBackStyle: number;
-    jungleBackStyle: number;
-    hellBackStyle: number;
-    spawnTileX: number;
-    spawnTileY: number;
-    worldSurface: number;
-    rockLayer: number;
-    tempTime: number;
-    tempDayTime: boolean;
-    tempMoonPhase: number;
-    tempBloodMoon: boolean;
-    tempEclipse: boolean;
-    dungeonX: number;
-    dungeonY: number;
-    crimson: boolean;
-    downedBoss1: boolean;
-    downedBoss2: boolean;
-    downedBoss3: boolean;
-    downedQueenBee: boolean;
-    downedMechBoss1: boolean;
-    downedMechBoss2: boolean;
-    downedMechBoss3: boolean;
-    downedMechBossAny: boolean;
-    downedPlantBoss: boolean;
-    downedGolemBoss: boolean;
-    downedSlimeKing: boolean;
-    savedGoblin: boolean;
-    savedWizard: boolean;
-    savedMech: boolean;
-    downedGoblins: boolean;
-    downedClown: boolean;
-    downedFrost: boolean;
-    downedPirates: boolean;
-    shadowOrbSmashed: boolean;
-    spawnMeteor: boolean;
-    shadowOrbCount: number;
-    altarCount: number;
-    hardMode: boolean;
-    afterPartyOfDoom: boolean;
-    invasionDelay: number;
-    invasionSize: number;
-    invasionType: number;
-    invasionX: number;
-    slimeRainTime: number;
-    sundialCooldown: number;
-    tempRaining: boolean;
-    tempRainTime: number;
-    tempMaxRain: number;
-    oreTier1: number;
-    oreTier2: number;
-    oreTier3: number;
-    setBG0: number;
-    setBG1: number;
-    setBG2: number;
-    setBG3: number;
-    setBG4: number;
-    setBG5: number;
-    setBG6: number;
-    setBG7: number;
-    cloudBGActive: number;
-    numClouds: number;
-    windSpeed: number;
-    anglerWhoFinishedToday: string[];
-    savedAngler: boolean;
-    anglerQuest: number;
-    savedStylist: boolean;
-    savedTaxCollector: boolean;
-    savedGolfer?: boolean;
-    invasionSizeStart: number;
-    tempCultistDelay: number;
-    killCount: number[];
-    fastForwardTimeToDawn: boolean;
-    downedFishron: boolean;
-    downedMartians: boolean;
-    downedAncientCultist: boolean;
-    downedMoonlord: boolean;
-    downedHalloweenKing: boolean;
-    downedHalloweenTree: boolean;
-    downedChristmasIceQueen: boolean;
-    downedChristmasSantank: boolean;
-    downedChristmasTree: boolean;
-    downedTowerSolar: boolean;
-    downedTowerVortex: boolean;
-    downedTowerNebula: boolean;
-    downedTowerStardust: boolean;
-    TowerActiveSolar: boolean;
-    TowerActiveVortex: boolean;
-    TowerActiveNebula: boolean;
-    TowerActiveStardust: boolean;
-    LunarApocalypseIsUp: boolean;
-    tempPartyManual: boolean;
-    tempPartyGenuine: boolean;
-    tempPartyCooldown: number;
-    tempPartyCelebratingNPCs: number[];
-    Temp_Sandstorm_Happening: boolean;
-    Temp_Sandstorm_TimeLeft: number;
-    Temp_Sandstorm_Severity: number;
-    Temp_Sandstorm_IntendedSeverity: number;
-    savedBartender: boolean;
-    DD2Event_DownedInvasionT1: boolean;
-    DD2Event_DownedInvasionT2: boolean;
-    DD2Event_DownedInvasionT3: boolean;
-    setBG8?: number;
-    setBG9?: number;
-    setBG10?: number;
-    setBG11?: number;
-    setBG12?: number;
-    combatBookWasUsed?: boolean;
-    lanternNightCooldown?: number;
-    lanternNightGenuine?: boolean;
-    lanternNightManual?: boolean;
-    lanternNightNextNightIsGenuine?: boolean;
-    treeTopsVariations?: number[];
-    forceHalloweenForToday?: boolean;
-    forceXMasForToday?: boolean;
-    savedOreTierCopper?: number;
-    savedOreTierIron?: number;
-    savedOreTierSilver?: number;
-    savedOreTierGold?: number;
-    boughtCat?: boolean;
-    boughtDog?: boolean;
-    boughtBunny?: boolean;
-    downedEmpressOfLight?: boolean;
-    downedQueenSlime?: boolean;
-    downedDeerclops?: boolean;
-    unlockedSlimeBlueSpawn?: boolean;
-    unlockedMerchantSpawn?: boolean;
-    unlockedDemolitionistSpawn?: boolean;
-    unlockedPartyGirlSpawn?: boolean;
-    unlockedDyeTraderSpawn?: boolean;
-    unlockedTruffleSpawn?: boolean;
-    unlockedArmsDealerSpawn?: boolean;
-    unlockedNurseSpawn?: boolean;
-    unlockedPrincessSpawn?: boolean;
-    combatBookVolumeTwoWasUsed?: boolean;
-    peddlersSatchelWasUsed?: boolean;
-    unlockedSlimeGreenSpawn?: boolean;
-    unlockedSlimeOldSpawn?: boolean;
-    unlockedSlimePurpleSpawn?: boolean;
-    unlockedSlimeRainbowSpawn?: boolean;
-    unlockedSlimeRedSpawn?: boolean;
-    unlockedSlimeYellowSpawn?: boolean;
-    unlockedSlimeCopperSpawn?: boolean;
-    fastForwardTimeToDusk?: boolean;
-    moondialCooldown?: number;
-  }
+  export type ParserFunction<K extends Name = Name> = (reader: BinaryReader, world: WorldProperties) => Map[K]
 }

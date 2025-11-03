@@ -1,10 +1,11 @@
-import { fileLoader } from 'terraria-world-reader-ts-wasm/adapter';
-import FileReader from 'terraria-world-reader-ts-wasm';
+import { fileLoader } from 'terraria-world-file-ts/adapter'
+import FileReader from 'terraria-world-file-ts'
 
 async function test() {
-  const reader = await new FileReader().loadFile(fileLoader, new URL('test.wld', import.meta.url));
+  const reader = await new FileReader().loadFile(fileLoader, new URL('test.wld', import.meta.url))
+  const data = reader.parse()
 
-  console.log(reader.parse());
+  console.log(data)
 }
 
-test();
+test()
