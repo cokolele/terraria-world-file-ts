@@ -4,7 +4,7 @@ import parseWorldTiles from './worldTiles'
 import parseChests from './chests'
 import parseSigns from './signs'
 import parseNPCs from './NPCs'
-// import tileEntities from './worldTiles'
+import parseTileEntities from './tileEntities'
 // import weightedPressurePlates from './worldTiles'
 // import rooms from './worldTiles'
 // import bestiary from './worldTiles'
@@ -18,6 +18,7 @@ export const sections = {
   chests: parseChests,
   signs: parseSigns,
   NPCs: parseNPCs,
+  tileEntities: parseTileEntities,
 } as const
 
 export default sections

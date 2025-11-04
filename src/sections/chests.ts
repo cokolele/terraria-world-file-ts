@@ -1,18 +1,20 @@
 import type BinaryReader from '../BinaryReader'
 
+export type Item = {
+  stack: number
+  id: number
+  prefix: number
+}
+
+export type ItemSlot = Item | null
+
 export type Chest = {
   position: {
     x: number
     y: number
   }
   name?: string
-  items?: Item[]
-}
-
-export type Item = {
-  stack: number
-  id: number
-  prefix: number
+  items?: ItemSlot[]
 }
 
 export default function parseChests(reader: BinaryReader) {
@@ -26,7 +28,7 @@ function parseChest(reader: BinaryReader): Chest {
       y: reader.readInt32(),
     },
     name: reader.readString(),
-    items: reader.readArray(40, () => parseItem(reader)).filter((item) => item.stack),
+    items: reader.readArray(40, () => parseItem(reader)).map((item) => (item.stack ? item : null)),
   }
 
   if (!data.name) {

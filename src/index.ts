@@ -1,5 +1,10 @@
 export { default } from './FileReader'
 
-export type { GameMode } from './sections/header'
-export type { Tile, Liquid, Slope } from './sections/worldTiles'
-export type { Chest, Item } from './sections/chests'
+export type * from './types'
+export type * from './sections/fileFormatHeader'
+export type * from './sections/header'
+export type * from './sections/worldTiles'
+export type * from './sections/chests'
+export type * from './sections/signs'
+export type * from './sections/NPCs'
+export type * from './sections/tileEntities'
