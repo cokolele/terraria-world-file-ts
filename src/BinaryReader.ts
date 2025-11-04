@@ -108,7 +108,17 @@ export default class BinaryReader {
   }
 
   public readArray<T>(length: number, valueReader: () => T): T[] {
-    return Array.from({ length }, () => valueReader.call(this))
+    return Array.from({ length }, () => valueReader())
+  }
+
+  public readArrayUntil<T>(predicate: () => boolean, valueReader: () => T): T[] {
+    return Array.from(
+      (function* () {
+        while (predicate()) {
+          yield valueReader()
+        }
+      })(),
+    )
   }
 
   public readBits(length: number): boolean[] {

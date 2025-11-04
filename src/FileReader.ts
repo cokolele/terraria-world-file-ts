@@ -1,5 +1,5 @@
 import BinaryReader from './BinaryReader'
-import sections from './parsers'
+import sections from './sections'
 import TerrariaWorldParserError from './TerrariaWorldParserError'
 
 import type { Options, Section, WorldProperties } from './types'

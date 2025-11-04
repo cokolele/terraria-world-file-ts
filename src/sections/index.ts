@@ -1,9 +1,9 @@
 import parseFileFormatHeader from './fileFormatHeader'
 import parseHeader from './header'
 import parseWorldTiles from './worldTiles'
-// import chests from './worldTiles'
-// import signs from './worldTiles'
-// import NPCs from './worldTiles'
+import parseChests from './chests'
+import parseSigns from './signs'
+import parseNPCs from './NPCs'
 // import tileEntities from './worldTiles'
 // import weightedPressurePlates from './worldTiles'
 // import rooms from './worldTiles'
@@ -15,6 +15,9 @@ export const sections = {
   fileHeader: parseFileFormatHeader,
   header: parseHeader,
   tiles: parseWorldTiles,
+  chests: parseChests,
+  signs: parseSigns,
+  NPCs: parseNPCs,
 } as const
 
 export default sections

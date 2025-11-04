@@ -1,4 +1,4 @@
-import type sections from './parsers'
+import type sections from './sections'
 import type BinaryReader from './BinaryReader'
 
 export type Options = {
