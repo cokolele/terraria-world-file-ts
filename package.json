@@ -6,7 +6,8 @@
   "devDependencies": {
     "@types/node": "^24.3.0",
     "prettier": "^3.6.2",
-    "tsdown": "^0.16.0"
+    "tsdown": "^0.16.0",
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "build:prod": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --exports",
@@ -29,9 +30,7 @@
       "source": "./src/platform/node.ts"
     }
   },
-  "dependencies": {
-    "typescript": "^5.9.3"
-  },
+  "dependencies": {},
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts"
 }

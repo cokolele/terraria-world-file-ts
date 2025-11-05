@@ -1,6 +1,5 @@
 /.devcontainer
 /.idea
-/src
 /test
 .nvmrc
 .prettierrc
