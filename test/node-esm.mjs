@@ -3,10 +3,7 @@ import FileReader from 'terraria-world-file-ts'
 
 async function test() {
   const reader = await new FileReader().loadFile(fileLoader, new URL('test.wld', import.meta.url))
-  const data = reader.parse({
-    sections: ['tileEntities'],
-    ignorePointers: true,
-  })
+  const data = reader.parse()
 
   console.log(data)
 }

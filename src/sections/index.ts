@@ -5,20 +5,25 @@ import parseChests from './chests'
 import parseSigns from './signs'
 import parseNPCs from './NPCs'
 import parseTileEntities from './tileEntities'
-// import weightedPressurePlates from './worldTiles'
-// import rooms from './worldTiles'
-// import bestiary from './worldTiles'
-// import creativePowers from './worldTiles'
-// import footer from './worldTiles'
+import parseWeightedPressurePlates from './weightedPressurePlates'
+import parseTownManager from './townManager'
+import parseBestiary from './bestiary'
+import parseCreativePowers from './creativePowers'
+import parseFooter from './footer'
 
 export const sections = {
-  fileHeader: parseFileFormatHeader,
+  fileFormatHeader: parseFileFormatHeader,
   header: parseHeader,
   tiles: parseWorldTiles,
   chests: parseChests,
   signs: parseSigns,
   NPCs: parseNPCs,
   tileEntities: parseTileEntities,
+  weightedPressurePlates: parseWeightedPressurePlates,
+  townManager: parseTownManager,
+  bestiary: parseBestiary,
+  creativePowers: parseCreativePowers,
+  footer: parseFooter,
 } as const
 
 export default sections

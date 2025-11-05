@@ -6,11 +6,11 @@ export default class BinaryReader {
   public ignoreBounds = false
   public progressCallback?: (percent: number) => void
 
-  get offset() {
+  private get offset() {
     return this._offset
   }
 
-  set offset(offset: number) {
+  private set offset(offset: number) {
     if (this.ignoreBounds && offset > this.view.byteLength) {
       this.view = new DataView(this.view.buffer, 0, this.view.byteLength + 10 * 1024 * 1024)
     }
@@ -152,11 +152,19 @@ export default class BinaryReader {
       .join('')
   }
 
+  public getPosition(): number {
+    return this.offset
+  }
+
   public skipBytes(count: number): void {
     this.offset += count
   }
 
   public jumpTo(offset: number): void {
     this.offset = offset
+  }
+
+  public isFinished(): boolean {
+    return this.offset >= this.view.byteLength
   }
 }

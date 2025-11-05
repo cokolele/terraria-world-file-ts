@@ -5,7 +5,6 @@ import TerrariaWorldParserError from './TerrariaWorldParserError'
 import type { Options, Section, WorldProperties } from './types'
 
 export default class FileReader {
-  private world = {} as WorldProperties
   private reader = new BinaryReader()
 
   private defaultOptions: Options = {
@@ -27,15 +26,16 @@ export default class FileReader {
   }
 
   public parse(options?: Partial<Options>): Partial<Section.Map> {
-    this.world = this.parseWorldProperties()
+    const world = this.parseWorldProperties()
     this.setOptions(options)
 
     let data: Partial<Section.Map> = {}
 
-    // if (this.world.version < 225) {
-    //   delete sections.bestiary;
-    //   delete sections.creativePowers;
-    // }
+    if (world.version < 225) {
+      this.selectedSections = this.selectedSections.filter(
+        (section) => section != 'bestiary' && section != 'creativePowers',
+      )
+    }
 
     for (let [sectionName, parseFunction] of Object.entries(sections) as [Section.Name, Section.ParserFunction][]) {
       if (!this.selectedSections.includes(sectionName as Section.Name)) {
@@ -44,13 +44,13 @@ export default class FileReader {
 
       const sectionIndex = Object.keys(sections).indexOf(sectionName)
 
-      this.reader.jumpTo(this.world.pointers[sectionIndex])
-      data[sectionName] = parseFunction(this.reader, this.world) as any
+      this.reader.jumpTo(world.pointers[sectionIndex])
+      data[sectionName] = parseFunction(this.reader, world) as any
 
       if (
         !this.ignorePointers &&
-        this.reader.offset != this.world.pointers[sectionIndex + 1]
-        // && this.reader.offset != this.reader.view.byteLength
+        this.reader.getPosition() != world.pointers[sectionIndex + 1] &&
+        !this.reader.isFinished()
       ) {
         throw new TerrariaWorldParserError(`Section ${sectionName} parsing ended at wrong point`)
       }
@@ -68,33 +68,27 @@ export default class FileReader {
   }
 
   private parseWorldProperties(): WorldProperties {
-    const data = {} as WorldProperties
-    let magicNumber, fileType
+    let data: any = {}
 
     try {
+      this.reader.jumpTo(0)
       data.version = this.reader.readInt32()
-      magicNumber = this.reader.readString(7)
-      fileType = this.reader.readUInt8()
+      data.magicNumber = this.reader.readString(7)
+      data.fileType = this.reader.readUInt8()
       this.reader.skipBytes(12)
-      data.pointers = [0]
-
-      for (let i = this.reader.readInt16(); i > 0; i--) {
-        data.pointers.push(this.reader.readInt32())
-      }
-
+      data.pointers = this.reader.readArray(this.reader.readInt16(), () => this.reader.readInt32())
       data.importants = this.reader.readBits(this.reader.readInt16())
       this.reader.readString()
       this.reader.readString()
       this.reader.skipBytes(44)
       data.height = this.reader.readInt32()
       data.width = this.reader.readInt32()
+      this.reader.jumpTo(0)
     } catch (e) {
       throw new TerrariaWorldParserError('Invalid file')
     }
 
-    this.reader.jumpTo(0)
-
-    if (magicNumber != 'relogic' || fileType != 2) {
+    if (data.magicNumber != 'relogic' || data.fileType != 2) {
       throw new TerrariaWorldParserError('Wrong file type')
     }
 
@@ -102,6 +96,12 @@ export default class FileReader {
       throw new TerrariaWorldParserError('Map file is too old')
     }
 
-    return data
+    return {
+      version: data.version,
+      pointers: [0, ...data.pointers],
+      importants: data.importants,
+      height: data.height,
+      width: data.width,
+    }
   }
 }
