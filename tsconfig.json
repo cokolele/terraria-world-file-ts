@@ -4,7 +4,10 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "strict": true,
-    "lib": ["ES2024"]
-  },
-  "include": ["src"]
+    "lib": ["ES2024"],
+    "declarationMap": true
+    //    "isolatedDeclarations": true,
+    //    "declaration": true,
+    //    "composite": true
+  }
 }

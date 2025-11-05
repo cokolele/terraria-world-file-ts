@@ -1,61 +1,37 @@
 {
-  "name": "terraria-world-file-ts",
+  "name": "terraria-world-file",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.cjs",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^24.3.0",
-    "tsdown": "^0.14.2",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "tsdown": "^0.16.0"
   },
   "scripts": {
-    "build": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm,cjs --out-dir dist --dts --clean",
-    "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm,cjs --out-dir dist --dts --clean --watch"
+    "build:prod": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --exports",
+    "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --watch"
   },
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      }
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "source": "./src/index.ts"
     },
-    "./adapter": {
-      "node": {
-        "import": {
-          "types": "./dist/platform/node.d.mts",
-          "default": "./dist/platform/node.mjs"
-        },
-        "require": {
-          "types": "./dist/platform/node.d.ts",
-          "default": "./dist/platform/node.js"
-        }
-      },
-      "browser": {
-        "import": {
-          "types": "./dist/platform/browser.d.mts",
-          "default": "./dist/platform/browser.js"
-        },
-        "require": {
-          "types": "./dist/platform/browser.d.ts",
-          "default": "./dist/platform/browser.js"
-        }
-      },
-      "default": {
-        "import": {
-          "types": "./dist/platform/browser.d.mts",
-          "default": "./dist/platform/browser.js"
-        },
-        "require": {
-          "types": "./dist/platform/browser.d.ts",
-          "default": "./dist/platform/browser.js"
-        }
-      }
+    "./platform/browser": {
+      "import": "./dist/platform/browser.mjs",
+      "require": "./dist/platform/browser.cjs",
+      "source": "./src/platform/browser.ts"
+    },
+    "./platform/node": {
+      "import": "./dist/platform/node.mjs",
+      "require": "./dist/platform/node.cjs",
+      "source": "./src/platform/node.ts"
     }
-  }
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts"
 }

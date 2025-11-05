@@ -14,12 +14,12 @@
 //     reader.readAsArrayBuffer(file);
 //   });
 // }
-
-import { readFile } from 'node:fs/promises';
+//
+// import { readFile } from 'node:fs/promises';
 
 export async function fileLoader(path: string): Promise<ArrayBufferLike> {
   // const buf = await readFile(path);
   // return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
 
-  return new Int32Array([4, 5, 6]).buffer;
+  return new Int32Array([4, 5, 6]).buffer
 }

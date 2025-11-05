@@ -122,12 +122,12 @@ export default class BinaryReader {
   }
 
   public readBits(length: number): boolean[] {
-    let bytes: number[] = []
+    let bytes = []
     for (let i = length; i > 0; i = i - 8) {
       bytes.push(this.readUInt8())
     }
 
-    let bitValues: boolean[] = []
+    let bitValues = []
     for (let i = 0, j = 0; i < length; i++, j++) {
       if (j == 8) {
         j = 0
@@ -137,19 +137,6 @@ export default class BinaryReader {
     }
 
     return bitValues
-  }
-
-  public readGuid(bytes: Uint8Array): string {
-    const bytesArray = Array.from(bytes)
-
-    return bytesArray
-      .slice(0, 4)
-      .reverse()
-      .concat(bytesArray.slice(4, 6).reverse())
-      .concat(bytesArray.slice(6, 8).reverse())
-      .concat(bytesArray.slice(8))
-      .map((byte, i) => ('00' + byte.toString(16)).substr(-2, 2) + ([4, 6, 8, 10].includes(i) ? '-' : ''))
-      .join('')
   }
 
   public getPosition(): number {
