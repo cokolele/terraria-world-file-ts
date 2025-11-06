@@ -5,13 +5,17 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "@vitest/coverage-v8": "^4.0.7",
     "prettier": "^3.6.2",
     "tsdown": "^0.16.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.7"
   },
   "scripts": {
     "build:prod": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --exports",
-    "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --watch"
+    "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --watch",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
   },
   "exports": {
     ".": {

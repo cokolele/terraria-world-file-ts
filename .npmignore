@@ -1,6 +1,7 @@
 /.devcontainer
 /.idea
 /test
+/coverage
 .nvmrc
 .prettierrc
 tsconfig.json
