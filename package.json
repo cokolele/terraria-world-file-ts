@@ -15,7 +15,7 @@
     "vitest": "^4.0.7"
   },
   "scripts": {
-    "build:prod": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --exports",
+    "build:prod": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean",
     "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --watch",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
@@ -27,12 +27,12 @@
       "require": "./dist/index.cjs",
       "source": "./src/index.ts"
     },
-    "./platform/browser": {
+    "./browser": {
       "import": "./dist/platform/browser.mjs",
       "require": "./dist/platform/browser.cjs",
       "source": "./src/platform/browser.ts"
     },
-    "./platform/node": {
+    "./node": {
       "import": "./dist/platform/node.mjs",
       "require": "./dist/platform/node.cjs",
       "source": "./src/platform/node.ts"

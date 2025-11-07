@@ -2,11 +2,11 @@
 
 ***
 
-[terraria-world-file](../README.md) / default
+[terraria-world-file](../globals.md) / default
 
 # Class: default
 
-Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/FileReader.ts#L7)
+Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/FileReader.ts#L7)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-fil
 
 > **loadFile**(`loader`, `path`): `Promise`\<`FileReader`\>
 
-Defined in: [src/FileReader.ts:22](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/FileReader.ts#L22)
+Defined in: [src/FileReader.ts:22](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/FileReader.ts#L22)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [src/FileReader.ts:22](https://github.com/cokolele/terraria-world-fi
 
 > **parse**(`options?`): [`Partial`](../-internal-/type-aliases/Partial.md)\<[`Map`](../terraria-world-file/namespaces/Section/type-aliases/Map.md)\>
 
-Defined in: [src/FileReader.ts:28](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/FileReader.ts#L28)
+Defined in: [src/FileReader.ts:28](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/FileReader.ts#L28)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 ***
 
-[terraria-world-file](../../README.md) / [\<internal\>](../README.md) / ReturnType
+[terraria-world-file](../../globals.md) / [\<internal\>](../README.md) / ReturnType
 
 # Type Alias: ReturnType\<T\>
 

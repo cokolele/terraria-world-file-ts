@@ -2,11 +2,11 @@
 
 ***
 
-[terraria-world-file](../README.md) / TileEntityType
+[terraria-world-file](../globals.md) / TileEntityType
 
 # Enumeration: TileEntityType
 
-Defined in: [src/sections/tileEntities.ts:70](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L70)
+Defined in: [src/sections/tileEntities.ts:70](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L70)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/sections/tileEntities.ts:70](https://github.com/cokolele/terrar
 
 > **DisplayDoll**: `3`
 
-Defined in: [src/sections/tileEntities.ts:74](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L74)
+Defined in: [src/sections/tileEntities.ts:74](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L74)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/sections/tileEntities.ts:74](https://github.com/cokolele/terrar
 
 > **FoodPlatter**: `6`
 
-Defined in: [src/sections/tileEntities.ts:77](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L77)
+Defined in: [src/sections/tileEntities.ts:77](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L77)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/sections/tileEntities.ts:77](https://github.com/cokolele/terrar
 
 > **HatRack**: `5`
 
-Defined in: [src/sections/tileEntities.ts:76](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L76)
+Defined in: [src/sections/tileEntities.ts:76](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L76)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/sections/tileEntities.ts:76](https://github.com/cokolele/terrar
 
 > **ItemFrame**: `1`
 
-Defined in: [src/sections/tileEntities.ts:72](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L72)
+Defined in: [src/sections/tileEntities.ts:72](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L72)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/sections/tileEntities.ts:72](https://github.com/cokolele/terrar
 
 > **LogicSensor**: `2`
 
-Defined in: [src/sections/tileEntities.ts:73](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L73)
+Defined in: [src/sections/tileEntities.ts:73](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L73)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/sections/tileEntities.ts:73](https://github.com/cokolele/terrar
 
 > **Pylon**: `7`
 
-Defined in: [src/sections/tileEntities.ts:78](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L78)
+Defined in: [src/sections/tileEntities.ts:78](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L78)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/sections/tileEntities.ts:78](https://github.com/cokolele/terrar
 
 > **TrainingDummy**: `0`
 
-Defined in: [src/sections/tileEntities.ts:71](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L71)
+Defined in: [src/sections/tileEntities.ts:71](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L71)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [src/sections/tileEntities.ts:71](https://github.com/cokolele/terrar
 
 > **WeaponsRack**: `4`
 
-Defined in: [src/sections/tileEntities.ts:75](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/tileEntities.ts#L75)
+Defined in: [src/sections/tileEntities.ts:75](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/tileEntities.ts#L75)

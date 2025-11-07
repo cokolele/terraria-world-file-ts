@@ -2,7 +2,7 @@
 
 ***
 
-[terraria-world-file](../../../README.md) / Section
+[terraria-world-file](../../../globals.md) / Section
 
 # Section
 

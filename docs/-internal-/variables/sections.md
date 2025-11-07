@@ -2,13 +2,13 @@
 
 ***
 
-[terraria-world-file](../../README.md) / [\<internal\>](../README.md) / sections
+[terraria-world-file](../../globals.md) / [\<internal\>](../README.md) / sections
 
 # Variable: sections
 
 > `const` **sections**: `object`
 
-Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/sections/index.ts#L14)
+Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/index.ts#L14)
 
 ## Type Declaration
 

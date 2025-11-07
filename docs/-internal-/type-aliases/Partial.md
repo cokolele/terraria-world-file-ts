@@ -2,7 +2,7 @@
 
 ***
 
-[terraria-world-file](../../README.md) / [\<internal\>](../README.md) / Partial
+[terraria-world-file](../../globals.md) / [\<internal\>](../README.md) / Partial
 
 # Type Alias: Partial\<T\>
 

@@ -2,13 +2,13 @@
 
 ***
 
-[terraria-world-file](../README.md) / WorldProperties
+[terraria-world-file](../globals.md) / WorldProperties
 
 # Type Alias: WorldProperties
 
 > **WorldProperties** = `object`
 
-Defined in: [src/types.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/types.ts#L12)
+Defined in: [src/types.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L12)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/types.ts:12](https://github.com/cokolele/terraria-world-file-ts
 
 > **height**: `number`
 
-Defined in: [src/types.ts:16](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/types.ts#L16)
+Defined in: [src/types.ts:16](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L16)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [src/types.ts:16](https://github.com/cokolele/terraria-world-file-ts
 
 > **importants**: `boolean`[]
 
-Defined in: [src/types.ts:15](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/types.ts#L15)
+Defined in: [src/types.ts:15](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L15)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [src/types.ts:15](https://github.com/cokolele/terraria-world-file-ts
 
 > **pointers**: `number`[]
 
-Defined in: [src/types.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/types.ts#L14)
+Defined in: [src/types.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L14)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [src/types.ts:14](https://github.com/cokolele/terraria-world-file-ts
 
 > **version**: `number`
 
-Defined in: [src/types.ts:13](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/types.ts#L13)
+Defined in: [src/types.ts:13](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L13)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [src/types.ts:13](https://github.com/cokolele/terraria-world-file-ts
 
 > **width**: `number`
 
-Defined in: [src/types.ts:17](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/types.ts#L17)
+Defined in: [src/types.ts:17](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L17)

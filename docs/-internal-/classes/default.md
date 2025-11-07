@@ -2,11 +2,11 @@
 
 ***
 
-[terraria-world-file](../../README.md) / [\<internal\>](../README.md) / default
+[terraria-world-file](../../globals.md) / [\<internal\>](../README.md) / default
 
 # Class: default
 
-Defined in: [src/BinaryReader.ts:1](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L1)
+Defined in: [src/BinaryReader.ts:1](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L1)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [src/BinaryReader.ts:1](https://github.com/cokolele/terraria-world-f
 
 > **ignoreBounds**: `boolean` = `false`
 
-Defined in: [src/BinaryReader.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L6)
+Defined in: [src/BinaryReader.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L6)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [src/BinaryReader.ts:6](https://github.com/cokolele/terraria-world-f
 
 > `optional` **progressCallback**: (`percent`) => `void`
 
-Defined in: [src/BinaryReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L7)
+Defined in: [src/BinaryReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L7)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [src/BinaryReader.ts:7](https://github.com/cokolele/terraria-world-f
 
 > **getPosition**(): `number`
 
-Defined in: [src/BinaryReader.ts:142](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L142)
+Defined in: [src/BinaryReader.ts:142](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L142)
 
 #### Returns
 
@@ -62,7 +62,7 @@ Defined in: [src/BinaryReader.ts:142](https://github.com/cokolele/terraria-world
 
 > **isFinished**(): `boolean`
 
-Defined in: [src/BinaryReader.ts:154](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L154)
+Defined in: [src/BinaryReader.ts:154](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L154)
 
 #### Returns
 
@@ -74,7 +74,7 @@ Defined in: [src/BinaryReader.ts:154](https://github.com/cokolele/terraria-world
 
 > **jumpTo**(`offset`): `void`
 
-Defined in: [src/BinaryReader.ts:150](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L150)
+Defined in: [src/BinaryReader.ts:150](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L150)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ Defined in: [src/BinaryReader.ts:150](https://github.com/cokolele/terraria-world
 
 > **loadBuffer**(`buffer`): `this`
 
-Defined in: [src/BinaryReader.ts:25](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L25)
+Defined in: [src/BinaryReader.ts:25](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L25)
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: [src/BinaryReader.ts:25](https://github.com/cokolele/terraria-world-
 
 > **readArray**\<`T`\>(`length`, `valueReader`): `T`[]
 
-Defined in: [src/BinaryReader.ts:110](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L110)
+Defined in: [src/BinaryReader.ts:110](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L110)
 
 #### Type Parameters
 
@@ -138,7 +138,7 @@ Defined in: [src/BinaryReader.ts:110](https://github.com/cokolele/terraria-world
 
 > **readArrayUntil**\<`T`\>(`predicate`, `valueReader`): `T`[]
 
-Defined in: [src/BinaryReader.ts:114](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L114)
+Defined in: [src/BinaryReader.ts:114](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L114)
 
 #### Type Parameters
 
@@ -166,7 +166,7 @@ Defined in: [src/BinaryReader.ts:114](https://github.com/cokolele/terraria-world
 
 > **readBits**(`length`): `boolean`[]
 
-Defined in: [src/BinaryReader.ts:124](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L124)
+Defined in: [src/BinaryReader.ts:124](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L124)
 
 #### Parameters
 
@@ -184,7 +184,7 @@ Defined in: [src/BinaryReader.ts:124](https://github.com/cokolele/terraria-world
 
 > **readBoolean**(): `boolean`
 
-Defined in: [src/BinaryReader.ts:81](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L81)
+Defined in: [src/BinaryReader.ts:81](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L81)
 
 #### Returns
 
@@ -196,7 +196,7 @@ Defined in: [src/BinaryReader.ts:81](https://github.com/cokolele/terraria-world-
 
 > **readBytes**(`count`): `Uint8Array`
 
-Defined in: [src/BinaryReader.ts:85](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L85)
+Defined in: [src/BinaryReader.ts:85](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L85)
 
 #### Parameters
 
@@ -214,7 +214,7 @@ Defined in: [src/BinaryReader.ts:85](https://github.com/cokolele/terraria-world-
 
 > **readFloat32**(): `number`
 
-Defined in: [src/BinaryReader.ts:71](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L71)
+Defined in: [src/BinaryReader.ts:71](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L71)
 
 #### Returns
 
@@ -226,7 +226,7 @@ Defined in: [src/BinaryReader.ts:71](https://github.com/cokolele/terraria-world-
 
 > **readFloat64**(): `number`
 
-Defined in: [src/BinaryReader.ts:76](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L76)
+Defined in: [src/BinaryReader.ts:76](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L76)
 
 #### Returns
 
@@ -238,7 +238,7 @@ Defined in: [src/BinaryReader.ts:76](https://github.com/cokolele/terraria-world-
 
 > **readInt16**(): `number`
 
-Defined in: [src/BinaryReader.ts:41](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L41)
+Defined in: [src/BinaryReader.ts:41](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L41)
 
 #### Returns
 
@@ -250,7 +250,7 @@ Defined in: [src/BinaryReader.ts:41](https://github.com/cokolele/terraria-world-
 
 > **readInt32**(): `number`
 
-Defined in: [src/BinaryReader.ts:51](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L51)
+Defined in: [src/BinaryReader.ts:51](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L51)
 
 #### Returns
 
@@ -262,7 +262,7 @@ Defined in: [src/BinaryReader.ts:51](https://github.com/cokolele/terraria-world-
 
 > **readInt64**(): `bigint`
 
-Defined in: [src/BinaryReader.ts:61](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L61)
+Defined in: [src/BinaryReader.ts:61](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L61)
 
 #### Returns
 
@@ -274,7 +274,7 @@ Defined in: [src/BinaryReader.ts:61](https://github.com/cokolele/terraria-world-
 
 > **readInt8**(): `number`
 
-Defined in: [src/BinaryReader.ts:31](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L31)
+Defined in: [src/BinaryReader.ts:31](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L31)
 
 #### Returns
 
@@ -286,7 +286,7 @@ Defined in: [src/BinaryReader.ts:31](https://github.com/cokolele/terraria-world-
 
 > **readString**(`length?`): `string`
 
-Defined in: [src/BinaryReader.ts:94](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L94)
+Defined in: [src/BinaryReader.ts:94](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L94)
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Defined in: [src/BinaryReader.ts:94](https://github.com/cokolele/terraria-world-
 
 > **readUInt16**(): `number`
 
-Defined in: [src/BinaryReader.ts:46](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L46)
+Defined in: [src/BinaryReader.ts:46](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L46)
 
 #### Returns
 
@@ -316,7 +316,7 @@ Defined in: [src/BinaryReader.ts:46](https://github.com/cokolele/terraria-world-
 
 > **readUInt32**(): `number`
 
-Defined in: [src/BinaryReader.ts:56](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L56)
+Defined in: [src/BinaryReader.ts:56](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L56)
 
 #### Returns
 
@@ -328,7 +328,7 @@ Defined in: [src/BinaryReader.ts:56](https://github.com/cokolele/terraria-world-
 
 > **readUInt64**(): `bigint`
 
-Defined in: [src/BinaryReader.ts:66](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L66)
+Defined in: [src/BinaryReader.ts:66](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L66)
 
 #### Returns
 
@@ -340,7 +340,7 @@ Defined in: [src/BinaryReader.ts:66](https://github.com/cokolele/terraria-world-
 
 > **readUInt8**(): `number`
 
-Defined in: [src/BinaryReader.ts:36](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L36)
+Defined in: [src/BinaryReader.ts:36](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L36)
 
 #### Returns
 
@@ -352,7 +352,7 @@ Defined in: [src/BinaryReader.ts:36](https://github.com/cokolele/terraria-world-
 
 > **skipBytes**(`count`): `void`
 
-Defined in: [src/BinaryReader.ts:146](https://github.com/cokolele/terraria-world-file-ts/blob/3c1037306d1e6b1cd8b92a0a27afc00d946c7c8b/src/BinaryReader.ts#L146)
+Defined in: [src/BinaryReader.ts:146](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/BinaryReader.ts#L146)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 ***
 
-[terraria-world-file](../README.md) / \<internal\>
+[terraria-world-file](../globals.md) / \<internal\>
 
 # \<internal\>
 

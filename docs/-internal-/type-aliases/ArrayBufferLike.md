@@ -2,7 +2,7 @@
 
 ***
 
-[terraria-world-file](../../README.md) / [\<internal\>](../README.md) / ArrayBufferLike
+[terraria-world-file](../../globals.md) / [\<internal\>](../README.md) / ArrayBufferLike
 
 # Type Alias: ArrayBufferLike
 

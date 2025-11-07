@@ -1,7 +1,3 @@
-**terraria-world-file**
-
-***
-
 <!--
   Title: terraria world parser
   Description: Terraria world file parser
