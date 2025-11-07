@@ -18,12 +18,6 @@ Feel free to contribute 🌳
 ```typescript
 import { fileLoader } from 'terraria-world-file/node'
 import TerrariaWorldParser from 'terraria-world-file'
-const a = await new Test().loadFile(fileLoader, '../terraria-world-file-ts/test/test.wld');
-a.parse({
-  sections: ['chests']
-}).chests?.forEach((chest) => {
-  console.log(chest)
-})
 
 const world = await new TerrariaWorldParser()
   .loadFile(fileLoader, '/map.wld')
