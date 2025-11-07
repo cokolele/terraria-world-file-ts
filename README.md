@@ -33,7 +33,7 @@ console.log('World seed is ' + world.header.seedText);
 
 ## Documentation:
 
-[Up to date Typedocs](/docs)
+[Up to date Typedocs](/docs/globals.md)
 
 ### Outdated manually typed
 
