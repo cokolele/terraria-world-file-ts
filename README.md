@@ -13,6 +13,18 @@ Terraria world file parser written in typescript
 
 Feel free to contribute 🌳
 
+## Installation
+
+```
+npm install terraria-world-file
+    -
+pnpm add terraria-world-file
+    -
+yarn add terraria-world-file
+    -
+bun add terraria-world-file
+```
+
 ## Usage
 
 ```typescript
