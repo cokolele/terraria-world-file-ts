@@ -35,12 +35,12 @@ const world = await new TerrariaWorldParser()
   .loadFile(fileLoader, '/map.wld')
   .parse()
 
-console.log('World seed is ' + world.header.seedText);
+console.log('World seed is ' + world.header.seedText)
 
 // todo: Add support for saving
 //
-// world.header.name = 'Edited ' + world.header.name;
-// new terrariaWorldSaver().save(world);
+// world.header.name = 'Edited ' + world.header.name
+// new terrariaWorldSaver().save(world)
 ```
 
 ## Documentation:
