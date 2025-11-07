@@ -8,7 +8,7 @@
 
 > **Sign** = `object`
 
-Defined in: [src/sections/signs.ts:3](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/signs.ts#L3)
+Defined in: [src/sections/signs.ts:3](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/signs.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/sections/signs.ts:3](https://github.com/cokolele/terraria-world
 
 > **position**: `object`
 
-Defined in: [src/sections/signs.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/signs.ts#L5)
+Defined in: [src/sections/signs.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/signs.ts#L5)
 
 #### x
 
@@ -32,4 +32,4 @@ Defined in: [src/sections/signs.ts:5](https://github.com/cokolele/terraria-world
 
 > **text**: `string`
 
-Defined in: [src/sections/signs.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/signs.ts#L4)
+Defined in: [src/sections/signs.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/signs.ts#L4)

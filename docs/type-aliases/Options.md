@@ -8,7 +8,7 @@
 
 > **Options** = `object`
 
-Defined in: [src/types.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L4)
+Defined in: [src/types.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L4)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/types.ts:4](https://github.com/cokolele/terraria-world-file-ts/
 
 > **dataRecovery**: `boolean`
 
-Defined in: [src/types.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L6)
+Defined in: [src/types.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L6)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [src/types.ts:6](https://github.com/cokolele/terraria-world-file-ts/
 
 > **ignoreBounds**: `boolean`
 
-Defined in: [src/types.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L8)
+Defined in: [src/types.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L8)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [src/types.ts:8](https://github.com/cokolele/terraria-world-file-ts/
 
 > **ignorePointers**: `boolean`
 
-Defined in: [src/types.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L5)
+Defined in: [src/types.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L5)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [src/types.ts:5](https://github.com/cokolele/terraria-world-file-ts/
 
 > **progressCallback**: (`percent`) => `void`
 
-Defined in: [src/types.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L9)
+Defined in: [src/types.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L9)
 
 #### Parameters
 
@@ -58,4 +58,4 @@ Defined in: [src/types.ts:9](https://github.com/cokolele/terraria-world-file-ts/
 
 > **sections**: [`Name`](../terraria-world-file/namespaces/Section/type-aliases/Name.md)[]
 
-Defined in: [src/types.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L7)
+Defined in: [src/types.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L7)

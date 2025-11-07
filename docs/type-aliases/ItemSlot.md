@@ -8,4 +8,4 @@
 
 > **ItemSlot** = [`Item`](Item.md) \| `null`
 
-Defined in: [src/sections/chests.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/chests.ts#L9)
+Defined in: [src/sections/chests.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/chests.ts#L9)

@@ -8,7 +8,7 @@
 
 > `const` **sections**: `object`
 
-Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/index.ts#L14)
+Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/index.ts#L14)
 
 ## Type Declaration
 

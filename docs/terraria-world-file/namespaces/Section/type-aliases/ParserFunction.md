@@ -8,7 +8,7 @@
 
 > **ParserFunction**\<`K`\> = (`reader`, `world`) => [`Map`](Map.md)\[`K`\]
 
-Defined in: [src/types.ts:27](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/types.ts#L27)
+Defined in: [src/types.ts:27](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L27)
 
 ## Type Parameters
 

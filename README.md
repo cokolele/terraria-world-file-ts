@@ -7,7 +7,7 @@
 
 # Terraria world file - typescript
 
-Terraria world file parser and saver written in typescript
+Terraria world file parser written in typescript
 
 \- supports maps from 1.3.5.3 to 1.4.4.9
 
@@ -15,28 +15,33 @@ Feel free to contribute 🌳
 
 ## Usage
 
-```javascript
-import { fileLoader } from 'terraria-world-file/platform/node'
-import test from 'terraria-world-file'
+```typescript
+import { fileLoader } from 'terraria-world-file/node'
+import TerrariaWorldParser from 'terraria-world-file'
+const a = await new Test().loadFile(fileLoader, '../terraria-world-file-ts/test/test.wld');
+a.parse({
+  sections: ['chests']
+}).chests?.forEach((chest) => {
+  console.log(chest)
+})
 
-let world = await new terrariaWorldParser().loadFile(mapFile || "/map.wld");
+const world = await new TerrariaWorldParser()
+  .loadFile(fileLoader, '/map.wld')
+  .parse()
 
-world = world.parse();
+console.log('World seed is ' + world.header.seedText);
 
-const name = world.header.name;
-const newName = "Canvas";
-
-console.log( "Old name: " + name );
-console.log( "New name: " + newName );
-
-world.header.name = newName;
-
-let newWorldFile = new terrariaWorldSaver().save({
-    world
-});
+// todo: Add support for saving
+//
+// world.header.name = 'Edited ' + world.header.name;
+// new terrariaWorldSaver().save(world);
 ```
 
 ## Documentation:
+
+[Up to date Typedocs](/docs)
+
+### Outdated manually typed
 
 *constructor*&nbsp;&nbsp;**new terrariaWorldParser()**
 <br>

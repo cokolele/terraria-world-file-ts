@@ -25,6 +25,12 @@ export default class FileReader {
     return this
   }
 
+  public async loadBuffer(buffer: ArrayBufferLike): Promise<this> {
+    this.reader.loadBuffer(buffer)
+
+    return this
+  }
+
   public parse(options?: Partial<Options>): Partial<Section.Map> {
     const world = this.parseWorldProperties()
     this.setOptions(options)

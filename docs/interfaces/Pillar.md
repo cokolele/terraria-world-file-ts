@@ -6,7 +6,7 @@
 
 # Interface: Pillar
 
-Defined in: [src/sections/NPCs.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/NPCs.ts#L4)
+Defined in: [src/sections/NPCs.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L4)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [src/sections/NPCs.ts:4](https://github.com/cokolele/terraria-world-
 
 > **id**: `number`
 
-Defined in: [src/sections/NPCs.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/NPCs.ts#L5)
+Defined in: [src/sections/NPCs.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L5)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [src/sections/NPCs.ts:5](https://github.com/cokolele/terraria-world-
 
 > **position**: `object`
 
-Defined in: [src/sections/NPCs.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/bee6fd53e3343381d8039b4efe8c5d24aba5cd2b/src/sections/NPCs.ts#L6)
+Defined in: [src/sections/NPCs.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L6)
 
 #### x
 
