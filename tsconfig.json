@@ -5,9 +5,9 @@
     "moduleResolution": "bundler",
     "strict": true,
     "lib": ["ES2024"],
-    "declarationMap": true
+    "declarationMap": true,
     //    "isolatedDeclarations": true,
-    //    "declaration": true,
-    //    "composite": true
+    "declaration": true,
+    "composite": true
   }
 }

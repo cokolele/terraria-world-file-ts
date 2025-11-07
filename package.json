@@ -8,6 +8,9 @@
     "@vitest/coverage-v8": "^4.0.7",
     "prettier": "^3.6.2",
     "tsdown": "^0.16.0",
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-markdown": "^4.9.0",
+    "typedoc-plugin-missing-exports": "^4.1.2",
     "typescript": "^5.9.3",
     "vitest": "^4.0.7"
   },
@@ -15,7 +18,8 @@
     "build:prod": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --exports",
     "build:watch": "tsdown src/index.ts src/platform/node.ts src/platform/browser.ts --format esm --format cjs --clean --watch",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts --plugin typedoc-plugin-missing-exports"
   },
   "exports": {
     ".": {
