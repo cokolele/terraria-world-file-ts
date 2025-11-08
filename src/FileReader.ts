@@ -20,6 +20,8 @@ export type WorldProperties = {
   width: number
 }
 
+type SelectedDataMap<T extends Section.Name[]> = { [K in T[number]]: Section.Data<K> }
+
 export default class FileReader {
   private reader = new BinaryReader()
 
@@ -55,11 +57,11 @@ export default class FileReader {
     return this
   }
 
-  public parse<T extends Section.Name[]>(options?: Partial<Options<T>>): { [K in T[number]]: Section.Data<K> } {
+  public parse<T extends Section.Name[]>(options?: Options<T>): SelectedDataMap<T> {
     const world = this.parseWorldProperties()
     this.setOptions(options)
 
-    let data = {} as { [K in T[number]]: Section.Data<K> }
+    let data = {} as SelectedDataMap<T>
 
     for (let [sectionName, sectionParser] of Object.entries(sections) as [T[number], Section.Parser<T[number]>][]) {
       if (
