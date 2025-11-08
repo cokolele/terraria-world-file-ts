@@ -1,5 +1,5 @@
 import type BinaryReader from '../BinaryReader'
-import type { WorldProperties } from '../types'
+import type { WorldProperties } from '../FileReader'
 
 export interface Pillar {
   id: number

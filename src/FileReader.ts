@@ -1,13 +1,29 @@
 import BinaryReader from './BinaryReader'
-import sections from './sections'
+import sections from './Section'
 import TerrariaWorldParserError from './TerrariaWorldParserError'
 
-import type { Options, Section, WorldProperties } from './types'
+import type { Section } from './Section'
+
+export type Options<T extends Section.Name[] = Section.Name[]> = {
+  ignorePointers?: boolean
+  dataRecovery?: boolean
+  sections?: T
+  ignoreBounds?: boolean
+  progressCallback?: (percent: number) => void
+}
+
+export type WorldProperties = {
+  version: number
+  pointers: number[]
+  importants: boolean[]
+  height: number
+  width: number
+}
 
 export default class FileReader {
   private reader = new BinaryReader()
 
-  private defaultOptions: Options = {
+  private defaultOptions: Required<Options> = {
     ignorePointers: false,
     dataRecovery: false,
     sections: Object.keys(sections) as Section.Name[],
@@ -18,6 +34,14 @@ export default class FileReader {
   private ignorePointers = this.defaultOptions.ignorePointers
   private dataRecovery = this.defaultOptions.dataRecovery
   private selectedSections = this.defaultOptions.sections
+
+  private setOptions(options: Options = {}): void {
+    this.ignorePointers = options.ignorePointers ?? this.defaultOptions.ignorePointers
+    this.dataRecovery = options.dataRecovery ?? this.defaultOptions.dataRecovery
+    this.selectedSections = options.sections ?? this.defaultOptions.sections
+    this.reader.ignoreBounds = options.ignoreBounds ?? this.defaultOptions.ignoreBounds
+    this.reader.progressCallback = options.progressCallback ?? this.defaultOptions.progressCallback
+  }
 
   public async loadFile(loader: (path: string) => Promise<ArrayBufferLike>, path: string): Promise<this> {
     this.reader.loadBuffer(await loader(path))
@@ -31,27 +55,24 @@ export default class FileReader {
     return this
   }
 
-  public parse(options?: Partial<Options>): Partial<Section.Map> {
+  public parse<T extends Section.Name[]>(options?: Partial<Options<T>>): { [K in T[number]]: Section.Data<K> } {
     const world = this.parseWorldProperties()
     this.setOptions(options)
 
-    let data: Partial<Section.Map> = {}
+    let data = {} as { [K in T[number]]: Section.Data<K> }
 
-    if (world.version < 225) {
-      this.selectedSections = this.selectedSections.filter(
-        (section) => section != 'bestiary' && section != 'creativePowers',
-      )
-    }
-
-    for (let [sectionName, parseFunction] of Object.entries(sections) as [Section.Name, Section.ParserFunction][]) {
-      if (!this.selectedSections.includes(sectionName as Section.Name)) {
+    for (let [sectionName, sectionParser] of Object.entries(sections) as [T[number], Section.Parser<T[number]>][]) {
+      if (
+        !this.selectedSections.includes(sectionName) ||
+        (world.version < 225 && ['bestiary', 'creativePowers'].includes(sectionName))
+      ) {
         continue
       }
 
       const sectionIndex = Object.keys(sections).indexOf(sectionName)
 
       this.reader.jumpTo(world.pointers[sectionIndex])
-      data[sectionName] = parseFunction(this.reader, world) as any
+      data[sectionName] = sectionParser(this.reader, world)
 
       if (
         !this.ignorePointers &&
@@ -65,16 +86,11 @@ export default class FileReader {
     return data
   }
 
-  private setOptions(options: Partial<Options> = {}): void {
-    this.ignorePointers = options.ignorePointers ?? this.defaultOptions.ignorePointers
-    this.dataRecovery = options.dataRecovery ?? this.defaultOptions.dataRecovery
-    this.selectedSections = options.sections ?? this.defaultOptions.sections
-    this.reader.ignoreBounds = options.ignoreBounds ?? this.defaultOptions.ignoreBounds
-    this.reader.progressCallback = options.progressCallback ?? this.defaultOptions.progressCallback
-  }
-
   private parseWorldProperties(): WorldProperties {
-    let data: any = {}
+    let data = {} as WorldProperties & {
+      magicNumber: string
+      fileType: number
+    }
 
     try {
       this.reader.jumpTo(0)
@@ -82,7 +98,7 @@ export default class FileReader {
       data.magicNumber = this.reader.readString(7)
       data.fileType = this.reader.readUInt8()
       this.reader.skipBytes(12)
-      data.pointers = this.reader.readArray(this.reader.readInt16(), () => this.reader.readInt32())
+      data.pointers = [0, ...this.reader.readArray(this.reader.readInt16(), () => this.reader.readInt32())]
       data.importants = this.reader.readBits(this.reader.readInt16())
       this.reader.readString()
       this.reader.readString()
@@ -102,12 +118,6 @@ export default class FileReader {
       throw new TerrariaWorldParserError('Map file is too old')
     }
 
-    return {
-      version: data.version,
-      pointers: [0, ...data.pointers],
-      importants: data.importants,
-      height: data.height,
-      width: data.width,
-    }
+    return data
   }
 }

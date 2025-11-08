@@ -1,4 +1,4 @@
-import type { WorldProperties } from '../types'
+import type { WorldProperties } from '../FileReader'
 import type BinaryReader from '../BinaryReader'
 
 export type Tile = {
