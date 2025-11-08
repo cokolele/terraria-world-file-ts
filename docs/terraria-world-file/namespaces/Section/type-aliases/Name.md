@@ -8,4 +8,4 @@
 
 > **Name** = keyof *typeof* [`sections`](../../../../-internal-/variables/sections.md)
 
-Defined in: [src/types.ts:21](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/types.ts#L21)
+Defined in: [src/Section.ts:33](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/Section.ts#L33)

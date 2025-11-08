@@ -8,6 +8,6 @@
 
 ## Type Aliases
 
-- [Map](type-aliases/Map.md)
+- [Data](type-aliases/Data.md)
 - [Name](type-aliases/Name.md)
-- [ParserFunction](type-aliases/ParserFunction.md)
+- [Parser](type-aliases/Parser.md)

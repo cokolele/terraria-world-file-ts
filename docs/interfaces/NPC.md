@@ -6,7 +6,7 @@
 
 # Interface: NPC
 
-Defined in: [src/sections/NPCs.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L12)
+Defined in: [src/parsers/NPCs.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L12)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/sections/NPCs.ts:12](https://github.com/cokolele/terraria-world
 
 > **homeless**: `boolean`
 
-Defined in: [src/sections/NPCs.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L14)
+Defined in: [src/parsers/NPCs.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L14)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [src/sections/NPCs.ts:14](https://github.com/cokolele/terraria-world
 
 > **homePosition**: `object`
 
-Defined in: [src/sections/NPCs.ts:15](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L15)
+Defined in: [src/parsers/NPCs.ts:15](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L15)
 
 #### x
 
@@ -42,7 +42,7 @@ Defined in: [src/sections/NPCs.ts:15](https://github.com/cokolele/terraria-world
 
 > **id**: `number`
 
-Defined in: [src/sections/NPCs.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L5)
+Defined in: [src/parsers/NPCs.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L5)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [src/sections/NPCs.ts:5](https://github.com/cokolele/terraria-world-
 
 > **name**: `string`
 
-Defined in: [src/sections/NPCs.ts:13](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L13)
+Defined in: [src/parsers/NPCs.ts:13](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L13)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/sections/NPCs.ts:13](https://github.com/cokolele/terraria-world
 
 > **position**: `object`
 
-Defined in: [src/sections/NPCs.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L6)
+Defined in: [src/parsers/NPCs.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L6)
 
 #### x
 
@@ -82,7 +82,7 @@ Defined in: [src/sections/NPCs.ts:6](https://github.com/cokolele/terraria-world-
 
 > `optional` **shimmered**: `boolean`
 
-Defined in: [src/sections/NPCs.ts:20](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L20)
+Defined in: [src/parsers/NPCs.ts:20](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L20)
 
 ***
 
@@ -90,4 +90,4 @@ Defined in: [src/sections/NPCs.ts:20](https://github.com/cokolele/terraria-world
 
 > `optional` **variationIndex**: `number`
 
-Defined in: [src/sections/NPCs.ts:19](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/NPCs.ts#L19)
+Defined in: [src/parsers/NPCs.ts:19](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/NPCs.ts#L19)

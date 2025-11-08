@@ -6,7 +6,7 @@
 
 # Interface: FoodPlatter
 
-Defined in: [src/sections/tileEntities.ts:64](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L64)
+Defined in: [src/parsers/tileEntities.ts:64](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L64)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/sections/tileEntities.ts:64](https://github.com/cokolele/terrar
 
 > **foodPlatter**: [`Item`](../type-aliases/Item.md)
 
-Defined in: [src/sections/tileEntities.ts:65](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L65)
+Defined in: [src/parsers/tileEntities.ts:65](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L65)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [src/sections/tileEntities.ts:65](https://github.com/cokolele/terrar
 
 > **id**: `number`
 
-Defined in: [src/sections/tileEntities.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L6)
+Defined in: [src/parsers/tileEntities.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L6)
 
 #### Inherited from
 
@@ -38,7 +38,7 @@ Defined in: [src/sections/tileEntities.ts:6](https://github.com/cokolele/terrari
 
 > **position**: `object`
 
-Defined in: [src/sections/tileEntities.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L7)
+Defined in: [src/parsers/tileEntities.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L7)
 
 #### x
 
@@ -58,7 +58,7 @@ Defined in: [src/sections/tileEntities.ts:7](https://github.com/cokolele/terrari
 
 > **type**: [`TileEntityType`](../enumerations/TileEntityType.md)
 
-Defined in: [src/sections/tileEntities.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L5)
+Defined in: [src/parsers/tileEntities.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L5)
 
 #### Inherited from
 

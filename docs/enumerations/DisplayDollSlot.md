@@ -6,7 +6,7 @@
 
 # Enumeration: DisplayDollSlot
 
-Defined in: [src/sections/tileEntities.ts:37](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L37)
+Defined in: [src/parsers/tileEntities.ts:37](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L37)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/sections/tileEntities.ts:37](https://github.com/cokolele/terrar
 
 > **Acc\_1**: `3`
 
-Defined in: [src/sections/tileEntities.ts:41](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L41)
+Defined in: [src/parsers/tileEntities.ts:41](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L41)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/sections/tileEntities.ts:41](https://github.com/cokolele/terrar
 
 > **Acc\_2**: `4`
 
-Defined in: [src/sections/tileEntities.ts:42](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L42)
+Defined in: [src/parsers/tileEntities.ts:42](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L42)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/sections/tileEntities.ts:42](https://github.com/cokolele/terrar
 
 > **Acc\_3**: `5`
 
-Defined in: [src/sections/tileEntities.ts:43](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L43)
+Defined in: [src/parsers/tileEntities.ts:43](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L43)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/sections/tileEntities.ts:43](https://github.com/cokolele/terrar
 
 > **Acc\_4**: `6`
 
-Defined in: [src/sections/tileEntities.ts:44](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L44)
+Defined in: [src/parsers/tileEntities.ts:44](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L44)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/sections/tileEntities.ts:44](https://github.com/cokolele/terrar
 
 > **Acc\_5**: `7`
 
-Defined in: [src/sections/tileEntities.ts:45](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L45)
+Defined in: [src/parsers/tileEntities.ts:45](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L45)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/sections/tileEntities.ts:45](https://github.com/cokolele/terrar
 
 > **Armor\_Head**: `0`
 
-Defined in: [src/sections/tileEntities.ts:38](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L38)
+Defined in: [src/parsers/tileEntities.ts:38](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L38)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/sections/tileEntities.ts:38](https://github.com/cokolele/terrar
 
 > **Armor\_Legs**: `2`
 
-Defined in: [src/sections/tileEntities.ts:40](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L40)
+Defined in: [src/parsers/tileEntities.ts:40](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L40)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [src/sections/tileEntities.ts:40](https://github.com/cokolele/terrar
 
 > **Armor\_Shirt**: `1`
 
-Defined in: [src/sections/tileEntities.ts:39](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/tileEntities.ts#L39)
+Defined in: [src/parsers/tileEntities.ts:39](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L39)

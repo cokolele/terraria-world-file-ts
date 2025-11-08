@@ -6,7 +6,7 @@
 
 # Enumeration: Slope
 
-Defined in: [src/sections/worldTiles.ts:26](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/worldTiles.ts#L26)
+Defined in: [src/parsers/worldTiles.ts:26](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/worldTiles.ts#L26)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/sections/worldTiles.ts:26](https://github.com/cokolele/terraria
 
 > **BL**: `5`
 
-Defined in: [src/sections/worldTiles.ts:31](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/worldTiles.ts#L31)
+Defined in: [src/parsers/worldTiles.ts:31](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/worldTiles.ts#L31)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/sections/worldTiles.ts:31](https://github.com/cokolele/terraria
 
 > **BR**: `4`
 
-Defined in: [src/sections/worldTiles.ts:30](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/worldTiles.ts#L30)
+Defined in: [src/parsers/worldTiles.ts:30](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/worldTiles.ts#L30)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/sections/worldTiles.ts:30](https://github.com/cokolele/terraria
 
 > **Half**: `1`
 
-Defined in: [src/sections/worldTiles.ts:27](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/worldTiles.ts#L27)
+Defined in: [src/parsers/worldTiles.ts:27](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/worldTiles.ts#L27)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/sections/worldTiles.ts:27](https://github.com/cokolele/terraria
 
 > **TL**: `3`
 
-Defined in: [src/sections/worldTiles.ts:29](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/worldTiles.ts#L29)
+Defined in: [src/parsers/worldTiles.ts:29](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/worldTiles.ts#L29)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [src/sections/worldTiles.ts:29](https://github.com/cokolele/terraria
 
 > **TR**: `2`
 
-Defined in: [src/sections/worldTiles.ts:28](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/worldTiles.ts#L28)
+Defined in: [src/parsers/worldTiles.ts:28](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/worldTiles.ts#L28)

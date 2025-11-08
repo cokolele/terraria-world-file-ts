@@ -8,7 +8,7 @@
 
 > **Bestiary** = `object`
 
-Defined in: [src/sections/bestiary.ts:3](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/bestiary.ts#L3)
+Defined in: [src/parsers/bestiary.ts:3](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/bestiary.ts#L3)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [src/sections/bestiary.ts:3](https://github.com/cokolele/terraria-wo
 
 > **NPCChats**: `object`
 
-Defined in: [src/sections/bestiary.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/bestiary.ts#L6)
+Defined in: [src/parsers/bestiary.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/bestiary.ts#L6)
 
 #### Index Signature
 
@@ -28,7 +28,7 @@ Defined in: [src/sections/bestiary.ts:6](https://github.com/cokolele/terraria-wo
 
 > **NPCKills**: `object`
 
-Defined in: [src/sections/bestiary.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/bestiary.ts#L4)
+Defined in: [src/parsers/bestiary.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/bestiary.ts#L4)
 
 #### Index Signature
 
@@ -40,7 +40,7 @@ Defined in: [src/sections/bestiary.ts:4](https://github.com/cokolele/terraria-wo
 
 > **NPCSights**: `object`
 
-Defined in: [src/sections/bestiary.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/bestiary.ts#L5)
+Defined in: [src/parsers/bestiary.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/bestiary.ts#L5)
 
 #### Index Signature
 

@@ -6,7 +6,7 @@
 
 # Enumeration: GameMode
 
-Defined in: [src/sections/header.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/header.ts#L4)
+Defined in: [src/parsers/header.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/header.ts#L4)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/sections/header.ts:4](https://github.com/cokolele/terraria-worl
 
 > **CreativeMode**: `3`
 
-Defined in: [src/sections/header.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/header.ts#L8)
+Defined in: [src/parsers/header.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/header.ts#L8)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/sections/header.ts:8](https://github.com/cokolele/terraria-worl
 
 > **ExpertMode**: `1`
 
-Defined in: [src/sections/header.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/header.ts#L6)
+Defined in: [src/parsers/header.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/header.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/sections/header.ts:6](https://github.com/cokolele/terraria-worl
 
 > **MasterMode**: `2`
 
-Defined in: [src/sections/header.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/header.ts#L7)
+Defined in: [src/parsers/header.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/header.ts#L7)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/sections/header.ts:7](https://github.com/cokolele/terraria-worl
 
 > **NormalMode**: `0`
 
-Defined in: [src/sections/header.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/header.ts#L5)
+Defined in: [src/parsers/header.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/header.ts#L5)

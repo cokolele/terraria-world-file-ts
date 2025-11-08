@@ -8,7 +8,7 @@
 
 > `const` **sections**: `object`
 
-Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/sections/index.ts#L14)
+Defined in: [src/Section.ts:17](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/Section.ts#L17)
 
 ## Type Declaration
 
@@ -74,7 +74,7 @@ Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-worl
 
 ##### fileType
 
-> **fileType**: `number`
+> **fileType**: `2`
 
 ##### importants
 
@@ -82,7 +82,7 @@ Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-worl
 
 ##### magicNumber
 
-> **magicNumber**: `string`
+> **magicNumber**: `"relogic"`
 
 ##### pointers
 
@@ -134,7 +134,7 @@ Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-worl
 
 ##### world
 
-[`WorldProperties`](../../type-aliases/WorldProperties.md)
+[`WorldProperties`](../type-aliases/WorldProperties.md)
 
 #### Returns
 
@@ -840,7 +840,7 @@ Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-worl
 
 ##### world
 
-[`WorldProperties`](../../type-aliases/WorldProperties.md)
+[`WorldProperties`](../type-aliases/WorldProperties.md)
 
 #### Returns
 
@@ -886,7 +886,7 @@ Defined in: [src/sections/index.ts:14](https://github.com/cokolele/terraria-worl
 
 ##### world
 
-[`WorldProperties`](../../type-aliases/WorldProperties.md)
+[`WorldProperties`](../type-aliases/WorldProperties.md)
 
 #### Returns
 

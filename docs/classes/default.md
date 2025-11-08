@@ -6,7 +6,7 @@
 
 # Class: default
 
-Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/FileReader.ts#L7)
+Defined in: [src/FileReader.ts:25](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L25)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-fil
 
 > **loadBuffer**(`buffer`): `Promise`\<`FileReader`\>
 
-Defined in: [src/FileReader.ts:28](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/FileReader.ts#L28)
+Defined in: [src/FileReader.ts:54](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L54)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [src/FileReader.ts:28](https://github.com/cokolele/terraria-world-fi
 
 > **loadFile**(`loader`, `path`): `Promise`\<`FileReader`\>
 
-Defined in: [src/FileReader.ts:22](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/FileReader.ts#L22)
+Defined in: [src/FileReader.ts:48](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L48)
 
 #### Parameters
 
@@ -62,16 +62,22 @@ Defined in: [src/FileReader.ts:22](https://github.com/cokolele/terraria-world-fi
 
 ### parse()
 
-> **parse**(`options?`): [`Partial`](../-internal-/type-aliases/Partial.md)\<[`Map`](../terraria-world-file/namespaces/Section/type-aliases/Map.md)\>
+> **parse**\<`T`\>(`options?`): [`SelectedDataMap`](../-internal-/type-aliases/SelectedDataMap.md)\<`T`\>
 
-Defined in: [src/FileReader.ts:34](https://github.com/cokolele/terraria-world-file-ts/blob/11b1413aa63c3ac1ac46f70787c81e7f610a70b4/src/FileReader.ts#L34)
+Defined in: [src/FileReader.ts:60](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L60)
+
+#### Type Parameters
+
+##### T
+
+`T` *extends* (`"fileFormatHeader"` \| `"header"` \| `"tiles"` \| `"chests"` \| `"signs"` \| `"NPCs"` \| `"tileEntities"` \| `"weightedPressurePlates"` \| `"townManager"` \| `"bestiary"` \| `"creativePowers"` \| `"footer"`)[]
 
 #### Parameters
 
 ##### options?
 
-[`Partial`](../-internal-/type-aliases/Partial.md)\<[`Options`](../type-aliases/Options.md)\>
+[`Options`](../-internal-/type-aliases/Options.md)\<`T`\>
 
 #### Returns
 
-[`Partial`](../-internal-/type-aliases/Partial.md)\<[`Map`](../terraria-world-file/namespaces/Section/type-aliases/Map.md)\>
+[`SelectedDataMap`](../-internal-/type-aliases/SelectedDataMap.md)\<`T`\>
