@@ -15,13 +15,18 @@ Feel free to contribute 🌳
 
 ## Installation
 
-```
+https://www.npmjs.com/package/terraria-world-file
+
+```bash
 npm install terraria-world-file
-    -
+```
+```bash
 pnpm add terraria-world-file
-    -
+```
+```bash
 yarn add terraria-world-file
-    -
+```
+```bash
 bun add terraria-world-file
 ```
 
