@@ -8,7 +8,7 @@
 
 > **Options**\<`T`\> = `object`
 
-Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L7)
+Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/FileReader.ts#L7)
 
 ## Type Parameters
 
@@ -22,7 +22,7 @@ Defined in: [src/FileReader.ts:7](https://github.com/cokolele/terraria-world-fil
 
 > `optional` **dataRecovery**: `boolean`
 
-Defined in: [src/FileReader.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L9)
+Defined in: [src/FileReader.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/FileReader.ts#L9)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/FileReader.ts:9](https://github.com/cokolele/terraria-world-fil
 
 > `optional` **ignoreBounds**: `boolean`
 
-Defined in: [src/FileReader.ts:11](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L11)
+Defined in: [src/FileReader.ts:11](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/FileReader.ts#L11)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/FileReader.ts:11](https://github.com/cokolele/terraria-world-fi
 
 > `optional` **ignorePointers**: `boolean`
 
-Defined in: [src/FileReader.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L8)
+Defined in: [src/FileReader.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/FileReader.ts#L8)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/FileReader.ts:8](https://github.com/cokolele/terraria-world-fil
 
 > `optional` **progressCallback**: (`percent`) => `void`
 
-Defined in: [src/FileReader.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L12)
+Defined in: [src/FileReader.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/FileReader.ts#L12)
 
 #### Parameters
 
@@ -64,4 +64,4 @@ Defined in: [src/FileReader.ts:12](https://github.com/cokolele/terraria-world-fi
 
 > `optional` **sections**: `T`
 
-Defined in: [src/FileReader.ts:10](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/FileReader.ts#L10)
+Defined in: [src/FileReader.ts:10](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/FileReader.ts#L10)

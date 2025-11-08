@@ -6,7 +6,7 @@
 
 # Enumeration: HatRackSlot
 
-Defined in: [src/parsers/tileEntities.ts:59](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L59)
+Defined in: [src/parsers/tileEntities.ts:59](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L59)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/parsers/tileEntities.ts:59](https://github.com/cokolele/terrari
 
 > **LeftHat**: `0`
 
-Defined in: [src/parsers/tileEntities.ts:60](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L60)
+Defined in: [src/parsers/tileEntities.ts:60](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L60)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [src/parsers/tileEntities.ts:60](https://github.com/cokolele/terrari
 
 > **RightHat**: `1`
 
-Defined in: [src/parsers/tileEntities.ts:61](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L61)
+Defined in: [src/parsers/tileEntities.ts:61](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L61)

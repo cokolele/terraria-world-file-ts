@@ -6,7 +6,7 @@
 
 # Enumeration: CreativePowerType
 
-Defined in: [src/parsers/creativePowers.ts:3](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L3)
+Defined in: [src/parsers/creativePowers.ts:3](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L3)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/parsers/creativePowers.ts:3](https://github.com/cokolele/terrar
 
 > **DifficultySliderPower**: `12`
 
-Defined in: [src/parsers/creativePowers.ts:16](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L16)
+Defined in: [src/parsers/creativePowers.ts:16](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L16)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/parsers/creativePowers.ts:16](https://github.com/cokolele/terra
 
 > **FarPlacementRangePower**: `11`
 
-Defined in: [src/parsers/creativePowers.ts:15](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L15)
+Defined in: [src/parsers/creativePowers.ts:15](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L15)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/parsers/creativePowers.ts:15](https://github.com/cokolele/terra
 
 > **FreezeRainPower**: `9`
 
-Defined in: [src/parsers/creativePowers.ts:13](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L13)
+Defined in: [src/parsers/creativePowers.ts:13](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L13)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/parsers/creativePowers.ts:13](https://github.com/cokolele/terra
 
 > **FreezeTime**: `0`
 
-Defined in: [src/parsers/creativePowers.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L4)
+Defined in: [src/parsers/creativePowers.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L4)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/parsers/creativePowers.ts:4](https://github.com/cokolele/terrar
 
 > **FreezeWindDirectionAndStrength**: `10`
 
-Defined in: [src/parsers/creativePowers.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L14)
+Defined in: [src/parsers/creativePowers.ts:14](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L14)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/parsers/creativePowers.ts:14](https://github.com/cokolele/terra
 
 > **GodModePower**: `5`
 
-Defined in: [src/parsers/creativePowers.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L9)
+Defined in: [src/parsers/creativePowers.ts:9](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L9)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/parsers/creativePowers.ts:9](https://github.com/cokolele/terrar
 
 > **ModifyRainPower**: `7`
 
-Defined in: [src/parsers/creativePowers.ts:11](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L11)
+Defined in: [src/parsers/creativePowers.ts:11](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L11)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [src/parsers/creativePowers.ts:11](https://github.com/cokolele/terra
 
 > **ModifyTimeRate**: `8`
 
-Defined in: [src/parsers/creativePowers.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L12)
+Defined in: [src/parsers/creativePowers.ts:12](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L12)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [src/parsers/creativePowers.ts:12](https://github.com/cokolele/terra
 
 > **ModifyWindDirectionAndStrength**: `6`
 
-Defined in: [src/parsers/creativePowers.ts:10](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L10)
+Defined in: [src/parsers/creativePowers.ts:10](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L10)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [src/parsers/creativePowers.ts:10](https://github.com/cokolele/terra
 
 > **SpawnRateSliderPerPlayerPower**: `14`
 
-Defined in: [src/parsers/creativePowers.ts:18](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L18)
+Defined in: [src/parsers/creativePowers.ts:18](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L18)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [src/parsers/creativePowers.ts:18](https://github.com/cokolele/terra
 
 > **StartDayImmediately**: `1`
 
-Defined in: [src/parsers/creativePowers.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L5)
+Defined in: [src/parsers/creativePowers.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L5)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [src/parsers/creativePowers.ts:5](https://github.com/cokolele/terrar
 
 > **StartMidnightImmediately**: `4`
 
-Defined in: [src/parsers/creativePowers.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L8)
+Defined in: [src/parsers/creativePowers.ts:8](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L8)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [src/parsers/creativePowers.ts:8](https://github.com/cokolele/terrar
 
 > **StartNightImmediately**: `3`
 
-Defined in: [src/parsers/creativePowers.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L7)
+Defined in: [src/parsers/creativePowers.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L7)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [src/parsers/creativePowers.ts:7](https://github.com/cokolele/terrar
 
 > **StartNoonImmediately**: `2`
 
-Defined in: [src/parsers/creativePowers.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L6)
+Defined in: [src/parsers/creativePowers.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L6)
 
 ***
 
@@ -126,4 +126,4 @@ Defined in: [src/parsers/creativePowers.ts:6](https://github.com/cokolele/terrar
 
 > **StopBiomeSpreadPower**: `13`
 
-Defined in: [src/parsers/creativePowers.ts:17](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/creativePowers.ts#L17)
+Defined in: [src/parsers/creativePowers.ts:17](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/creativePowers.ts#L17)

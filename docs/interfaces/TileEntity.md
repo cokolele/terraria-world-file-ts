@@ -6,7 +6,7 @@
 
 # Interface: TileEntity
 
-Defined in: [src/parsers/tileEntities.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L4)
+Defined in: [src/parsers/tileEntities.ts:4](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L4)
 
 ## Extended by
 
@@ -25,7 +25,7 @@ Defined in: [src/parsers/tileEntities.ts:4](https://github.com/cokolele/terraria
 
 > **id**: `number`
 
-Defined in: [src/parsers/tileEntities.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L6)
+Defined in: [src/parsers/tileEntities.ts:6](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L6)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [src/parsers/tileEntities.ts:6](https://github.com/cokolele/terraria
 
 > **position**: `object`
 
-Defined in: [src/parsers/tileEntities.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L7)
+Defined in: [src/parsers/tileEntities.ts:7](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L7)
 
 #### x
 
@@ -49,4 +49,4 @@ Defined in: [src/parsers/tileEntities.ts:7](https://github.com/cokolele/terraria
 
 > **type**: [`TileEntityType`](../enumerations/TileEntityType.md)
 
-Defined in: [src/parsers/tileEntities.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/b483946b5cf9c96a2145b12a130bc47c7cf06e89/src/parsers/tileEntities.ts#L5)
+Defined in: [src/parsers/tileEntities.ts:5](https://github.com/cokolele/terraria-world-file-ts/blob/94cb2473bcb7c6d856cdf2ac88c73740ebe5499e/src/parsers/tileEntities.ts#L5)
