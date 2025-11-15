@@ -1,8 +1,8 @@
 import BinaryReader from './BinaryReader'
-import sections from './Section'
-import TerrariaWorldParserError from './TerrariaWorldParserError'
+import sections from './sections'
+import TerrariaWorldFileError from './TerrariaWorldFileError'
 
-import type { Section } from './Section'
+import type { Section } from './sections'
 
 export type Options<T extends Section.Name[] = Section.Name[]> = {
   ignorePointers?: boolean
@@ -23,7 +23,10 @@ export type WorldProperties = {
 type SelectedDataMap<T extends Section.Name[]> = { [K in T[number]]: Section.Data<K> }
 
 export default class FileReader {
-  private reader = new BinaryReader()
+  private reader!: BinaryReader
+  private ignorePointers!: boolean
+  private dataRecovery!: boolean
+  private selectedSections!: Section.Name[]
 
   private defaultOptions: Required<Options> = {
     ignorePointers: false,
@@ -33,10 +36,6 @@ export default class FileReader {
     progressCallback: null as any,
   }
 
-  private ignorePointers = this.defaultOptions.ignorePointers
-  private dataRecovery = this.defaultOptions.dataRecovery
-  private selectedSections = this.defaultOptions.sections
-
   private setOptions(options: Options = {}): void {
     this.ignorePointers = options.ignorePointers ?? this.defaultOptions.ignorePointers
     this.dataRecovery = options.dataRecovery ?? this.defaultOptions.dataRecovery
@@ -45,14 +44,14 @@ export default class FileReader {
     this.reader.progressCallback = options.progressCallback ?? this.defaultOptions.progressCallback
   }
 
-  public async loadFile(loader: (path: string) => Promise<ArrayBufferLike>, path: string): Promise<this> {
-    this.reader.loadBuffer(await loader(path))
+  public async loadFile(loader: (path: string) => Promise<ArrayBuffer>, path: string): Promise<this> {
+    this.reader = new BinaryReader().loadBuffer(await loader(path))
 
     return this
   }
 
-  public async loadBuffer(buffer: ArrayBufferLike): Promise<this> {
-    this.reader.loadBuffer(buffer)
+  public async loadBuffer(buffer: ArrayBuffer): Promise<this> {
+    this.reader = new BinaryReader().loadBuffer(buffer)
 
     return this
   }
@@ -63,7 +62,7 @@ export default class FileReader {
 
     let data = {} as SelectedDataMap<T>
 
-    for (let [sectionName, sectionParser] of Object.entries(sections) as [T[number], Section.Parser<T[number]>][]) {
+    for (let [sectionName, sectionIO] of Object.entries(sections) as [T[number], Section.IO<T[number]>][]) {
       if (
         !this.selectedSections.includes(sectionName) ||
         (world.version < 225 && ['bestiary', 'creativePowers'].includes(sectionName))
@@ -74,14 +73,14 @@ export default class FileReader {
       const sectionIndex = Object.keys(sections).indexOf(sectionName)
 
       this.reader.jumpTo(world.pointers[sectionIndex])
-      data[sectionName] = sectionParser(this.reader, world)
+      data[sectionName] = sectionIO.parse(this.reader, world).data
 
       if (
         !this.ignorePointers &&
         this.reader.getPosition() != world.pointers[sectionIndex + 1] &&
         !this.reader.isFinished()
       ) {
-        throw new TerrariaWorldParserError(`Section ${sectionName} parsing ended at wrong point`)
+        throw new TerrariaWorldFileError(`Section ${sectionName} parsing ended at wrong point`)
       }
     }
 
@@ -109,15 +108,15 @@ export default class FileReader {
       data.width = this.reader.readInt32()
       this.reader.jumpTo(0)
     } catch (e) {
-      throw new TerrariaWorldParserError('Invalid file')
+      throw new TerrariaWorldFileError('Invalid file')
     }
 
     if (data.magicNumber != 'relogic' || data.fileType != 2) {
-      throw new TerrariaWorldParserError('Wrong file type')
+      throw new TerrariaWorldFileError('Wrong file type')
     }
 
     if (data.version < 194) {
-      throw new TerrariaWorldParserError('Map file is too old')
+      throw new TerrariaWorldFileError('Map file is too old')
     }
 
     return data

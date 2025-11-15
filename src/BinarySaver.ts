@@ -1,6 +1,9 @@
 export default class BinarySaver {
-  private view: DataView<ArrayBuffer> = new DataView(new ArrayBuffer(0))
-  private _offset: number = 0
+  private view = new DataView(new ArrayBuffer(4 * 1024 * 1024))
+  private _offset = 0
+
+  public progress = 0
+  public progressCallback?: (percent: number) => void
 
   private get offset() {
     return this._offset

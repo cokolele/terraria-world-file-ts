@@ -1,7 +1,7 @@
 export default class BinaryReader {
-  private view: DataView = new DataView(new ArrayBuffer(0))
-  private _offset: number = 0
-  private progress: number = 0
+  private view!: DataView<ArrayBuffer>
+  private _offset!: number
+  private progress!: number
 
   public ignoreBounds = false
   public progressCallback?: (percent: number) => void
@@ -12,7 +12,7 @@ export default class BinaryReader {
 
   private set offset(offset: number) {
     if (this.ignoreBounds && offset > this.view.byteLength) {
-      this.view = new DataView(this.view.buffer, 0, this.view.byteLength + 10 * 1024 * 1024)
+      this.view = new DataView(this.view.buffer.transfer(this.view.byteLength + 4 * 1024 * 1024))
     }
 
     if (this.progressCallback && (offset / this.view.byteLength) * 100 > this.progress + 1 && this.progress != 100) {
@@ -22,9 +22,9 @@ export default class BinaryReader {
     this._offset = offset
   }
 
-  public loadBuffer(buffer: ArrayBufferLike): this {
+  public loadBuffer(buffer: ArrayBuffer): this {
     this.view = new DataView(buffer)
-    this.offset = this.progress = 0
+    this._offset = this.progress = 0
     return this
   }
 
@@ -82,13 +82,8 @@ export default class BinaryReader {
     return Boolean(this.readUInt8())
   }
 
-  public readBytes(count: number): Uint8Array {
-    let data: number[] = []
-    for (let i = 0; i < count; i++) {
-      data[i] = this.readUInt8()
-    }
-
-    return new Uint8Array(data)
+  public readBytes(length: number): Uint8Array<ArrayBuffer> {
+    return new Uint8Array(Array.from({ length }, () => this.readUInt8()))
   }
 
   public readString(length?: number): string {
