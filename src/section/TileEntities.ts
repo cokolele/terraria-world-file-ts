@@ -25,11 +25,13 @@ export class TileEntitiesData {
 export default class TileEntitiesIO implements Section.IODefinition<TileEntitiesData> {
   public parse(reader: BinaryReader, world: WorldProperties): TileEntitiesData {
     const data = new TileEntitiesData()
-    data.entities = reader.readArray(reader.readInt32(), () => this.parseEntity(reader))
+
+    data.entities = reader.readArray(reader.readInt32(), () => this.parseEntity(reader, world))
+
     return data
   }
 
-  private parseEntity(reader: BinaryReader): TileEntity {
+  private parseEntity(reader: BinaryReader, world: WorldProperties): TileEntity {
     const entity: TileEntityBase = {
       type: reader.readUInt8() as TileEntityType,
       id: reader.readInt32(),
@@ -47,7 +49,7 @@ export default class TileEntitiesIO implements Section.IODefinition<TileEntities
       case TileEntityType.LogicSensor:
         return this.parseLogicSensor(reader, entity)
       case TileEntityType.DisplayDoll:
-        return this.parseDisplayDoll(reader, entity)
+        return this.parseDisplayDoll(reader, entity, world)
       case TileEntityType.WeaponsRack:
         return this.parseWeaponsRack(reader, entity)
       case TileEntityType.HatRack:
@@ -84,9 +86,17 @@ export default class TileEntitiesIO implements Section.IODefinition<TileEntities
     }
   }
 
-  private parseDisplayDoll(reader: BinaryReader, entity: TileEntityBase): DisplayDoll {
+  private parseDisplayDoll(reader: BinaryReader, entity: TileEntityBase, world: WorldProperties): DisplayDoll {
     const items = reader.readBits(8),
       dyes = reader.readBits(8)
+
+    if (world.version >= 307) {
+      reader.readInt8()
+    }
+
+    if (world.version >= 308) {
+      reader.readInt8()
+    }
 
     return {
       ...entity,

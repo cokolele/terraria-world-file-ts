@@ -82,7 +82,9 @@ export default class FileReader {
         this.reader.getPosition() != world.pointers[sectionIndex + 1] &&
         !this.reader.isFinished()
       ) {
-        throw new TerrariaWorldFileError(`Section ${sectionName} parsing ended at wrong point`)
+        throw new TerrariaWorldFileError(
+          `Section ${sectionName} parsing ended at wrong point, ${this.reader.getPosition()} != ${world.pointers[sectionIndex + 1]}`,
+        )
       }
     }
 

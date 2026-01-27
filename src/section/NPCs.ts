@@ -47,6 +47,10 @@ export default class NPCsIO implements Section.IODefinition<NPCsData> {
       NPC.variationIndex = reader.readInt32()
     }
 
+    if (world.version >= 315) {
+      NPC.homelessDespawn = reader.readBoolean()
+    }
+
     if (shimmeredNPCIds.includes(NPC.id)) {
       NPC.shimmered = true
     }

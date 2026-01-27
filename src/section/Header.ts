@@ -2,7 +2,7 @@ import type BinaryReader from '../BinaryReader'
 import type { WorldProperties } from '../FileReader'
 import type BinarySaver from '../BinarySaver'
 import type { Section } from '../sections'
-import type { GameMode } from '../types'
+import type { GameMode, Position } from '../types'
 
 export class HeaderData {
   public mapName!: string
@@ -25,8 +25,10 @@ export class HeaderData {
   public remixWorld!: boolean
   public noTrapsWorld!: boolean
   public zenithWorld!: boolean
+  public skyblockWorld!: boolean
   public expertMode!: boolean
   public creationTime!: Uint8Array<ArrayBuffer>
+  public lastPlayed?: Uint8Array<ArrayBuffer>
   public moonType!: number
   public treeX!: [number, number, number]
   public treeStyle!: [number, number, number, number]
@@ -103,6 +105,7 @@ export class HeaderData {
   public invasionSizeStart!: number
   public tempCultistDelay!: number
   public killCount!: number[]
+  public claimableBanners!: number[]
   public fastForwardTimeToDawn!: boolean
   public downedFishron!: boolean
   public downedMartians!: boolean
@@ -177,6 +180,17 @@ export class HeaderData {
   public unlockedSlimeCopperSpawn!: boolean
   public fastForwardTimeToDusk!: boolean
   public moondialCooldown!: number
+
+  public forceHalloweenForever!: boolean
+  public forceXMasForever!: boolean
+  public vampireSeed!: boolean
+  public infectedSeed!: boolean
+  public tempMeteorShowerCount!: number
+  public tempCoinRain!: number
+  public teamBasedSpawnsSeed!: boolean
+  public extraSpawnPoints!: Position[]
+  public dualDungeonsSeed!: boolean
+  public manifest?: string
 }
 
 export default class HeaderIO implements Section.IODefinition<HeaderData> {
@@ -206,8 +220,10 @@ export default class HeaderIO implements Section.IODefinition<HeaderData> {
     data.remixWorld = world.version >= 249 && reader.readBoolean()
     data.noTrapsWorld = world.version >= 266 && reader.readBoolean()
     data.zenithWorld = world.version >= 267 && reader.readBoolean()
+    data.skyblockWorld = world.version >= 302 && reader.readBoolean()
     data.expertMode = !isV140 && reader.readBoolean()
     data.creationTime = reader.readBytes(8)
+    data.lastPlayed = world.version >= 284 ? reader.readBytes(8) : undefined
     data.moonType = reader.readUInt8()
     data.treeX = [reader.readInt32(), reader.readInt32(), reader.readInt32()]
     data.treeStyle = [reader.readInt32(), reader.readInt32(), reader.readInt32(), reader.readInt32()]
@@ -284,6 +300,9 @@ export default class HeaderIO implements Section.IODefinition<HeaderData> {
     data.invasionSizeStart = reader.readInt32()
     data.tempCultistDelay = reader.readInt32()
     data.killCount = reader.readArray(reader.readInt16(), () => reader.readInt32())
+    if (world.version >= 289) {
+      data.claimableBanners = reader.readArray(reader.readInt16(), () => reader.readUInt16())
+    }
     data.fastForwardTimeToDawn = reader.readBoolean()
     data.downedFishron = reader.readBoolean()
     data.downedMartians = reader.readBoolean()
@@ -358,6 +377,19 @@ export default class HeaderIO implements Section.IODefinition<HeaderData> {
     data.unlockedSlimeCopperSpawn = isV144 && reader.readBoolean()
     data.fastForwardTimeToDusk = isV144 && reader.readBoolean()
     data.moondialCooldown = Number(isV144 && reader.readUInt8())
+    data.forceHalloweenForever = world.version >= 287 && reader.readBoolean()
+    data.forceXMasForever = world.version >= 287 && reader.readBoolean()
+    data.vampireSeed = world.version >= 288 && reader.readBoolean()
+    data.infectedSeed = world.version >= 296 && reader.readBoolean()
+    data.tempMeteorShowerCount = Number(world.version >= 291 && reader.readInt32())
+    data.tempCoinRain = Number(world.version >= 291 && reader.readInt32())
+    data.teamBasedSpawnsSeed = world.version >= 297 && reader.readBoolean()
+    data.extraSpawnPoints =
+      world.version >= 297
+        ? reader.readArray(reader.readInt8(), (): Position => ({ x: reader.readInt16(), y: reader.readInt16() }))
+        : []
+    data.dualDungeonsSeed = world.version >= 304 && reader.readBoolean()
+    data.manifest = world.version >= 299 ? reader.readString() : ''
 
     return data
   }

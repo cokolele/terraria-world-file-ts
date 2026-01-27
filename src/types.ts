@@ -76,6 +76,7 @@ export interface TownNPC extends Pillar {
   homeless: boolean
   homePosition: Position
   variationIndex?: number
+  homelessDespawn?: boolean
   shimmered?: boolean
 }
 

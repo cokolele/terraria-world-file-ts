@@ -12,20 +12,29 @@ export default class ChestsIO implements Section.IODefinition<ChestsData> {
   parse(reader: BinaryReader, world: WorldProperties): ChestsData {
     const data = new ChestsData()
 
-    data.chests = reader.readArray(reader.readInt32() & 0xffff, () => this.parseChest(reader))
+    data.chests = reader.readArray(world.version < 294 ? reader.readInt32() & 0xffff : reader.readInt16(), () =>
+      this.parseChest(reader, world),
+    )
 
     return data
   }
 
-  private parseChest(reader: BinaryReader): Chest {
+  private parseChest(reader: BinaryReader, world: WorldProperties): Chest {
     const data: Chest = {
       position: {
         x: reader.readInt32(),
         y: reader.readInt32(),
       },
       name: reader.readString(),
-      items: reader.readArray(40, () => this.parseItem(reader)).map((item) => (item.stack ? item : null)),
     }
+
+    let chestSize = 40
+
+    if (world.version >= 294) {
+      chestSize = reader.readInt32()
+    }
+
+    data.items = reader.readArray(chestSize, () => this.parseItem(reader)).map((item) => (item.stack ? item : null))
 
     if (!data.name) {
       delete data.name
